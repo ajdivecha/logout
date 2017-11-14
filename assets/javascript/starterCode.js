@@ -83,7 +83,7 @@
         }
     });
 
-    firebase.auth().signOut().then(function(signOut) {
+    firebase.auth().signOut().then(function() {
         // sign-out successful
     }).catch(function(error) {
         // an error happened
