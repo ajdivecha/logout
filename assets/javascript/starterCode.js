@@ -37,7 +37,7 @@
         var displayName = user.displayName;
         var email = user.email;
         var emailVerified = user.emailVerified;
-        var photoURL = user.photoURL;
+        var photoURL = user.providerData.photoURL;
         var isAnonymous = user.isAnonymous;
         var uid = user.uid;
         var providerData = user.providerData;
@@ -83,16 +83,23 @@
         }
     });
 
+    
     firebase.auth().signOut().then(function() {
         // sign-out successful
     }).catch(function(error) {
         // an error happened
     });
 
-    signOut();
 
-    $(".logoutButton").on("click", signOut);
-});
+    $(".logoutButton").on("click", function() {
+        firebase.auth().signOut().then(function() {
+            // sign-out successful
+        }).catch(function(error) {
+            // an error happened
+        });
+}
+
+    
 
 
 // if (user != null) {
