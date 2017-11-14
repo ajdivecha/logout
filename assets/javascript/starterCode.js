@@ -83,7 +83,13 @@
         }
     });
 
+    firebase.auth().signOut().then(function() {
+        // sign-out successful
+    }).catch(function() {
+        // an error happened
+    });
 
+    $(".logoutButton").on("click", signOut);
 
 });
 
