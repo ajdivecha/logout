@@ -89,9 +89,9 @@
         // an error happened
     });
 
-    $(".logoutButton").on("click", signOut);
-
     signOut();
+
+    $(".logoutButton").on("click", signOut);
 });
 
 
