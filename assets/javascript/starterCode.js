@@ -91,6 +91,7 @@
 
     $(".logoutButton").on("click", signOut);
 
+    signOut();
 });
 
 
