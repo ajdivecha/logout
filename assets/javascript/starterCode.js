@@ -85,7 +85,7 @@
 
     firebase.auth().signOut().then(function(signOut) {
         // sign-out successful
-    }).catch(function() {
+    }).catch(function(error) {
         // an error happened
     });
 
