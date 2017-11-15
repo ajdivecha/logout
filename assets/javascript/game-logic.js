@@ -306,7 +306,7 @@ function endGame () {
 	// ask if players want to play again
 }
 
-// // variable declaration
+// variable declaration
 
 // // word bank -- randomly select search term from here
 // var searchTerms = ['puppy','cats','pink flowers','trees and sun'];
@@ -571,4 +571,4 @@ function endGame () {
 
 
 
-// })
+})
