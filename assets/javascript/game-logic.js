@@ -283,9 +283,9 @@ function showImage () {
 
 $(".logoutButton").on("click", function() {
 	firebase.auth().signOut().then(function() {
-		// sign-out successful
-	}).catch(function(error) {
-		// an error happened
+		console.log("Signed Out");
+	}, function(error) {
+		console.error("Sign Out Error", error);
 	});
 
 function updateFirebaseUserData () {
